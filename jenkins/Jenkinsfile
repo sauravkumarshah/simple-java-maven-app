@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Ensure that the script file has executable permissions
-                    sh 'chmod +x /var/jenkins_home/workspace/Github\\ Pipeline/jenkins/scripts/deliver.sh'
+                    sh 'chmod +x /var/jenkins_home/workspace/*/jenkins/scripts/deliver.sh'
                 }
                 // Execute the script
                 sh './jenkins/scripts/deliver.sh'
